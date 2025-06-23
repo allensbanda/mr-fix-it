@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MR FIX IT Garage</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/a2d9fddc6f.js" crossorigin="anonymous"></script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav {
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 15px 20px;
+      display: block;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    .hero {
+      width: 100%;
+      max-height: 450px;
+      object-fit: cover;
+      border-bottom: 4px solid #1a1a1a;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #1a1a1a;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    th, td {
+      border: 1px solid #999;
+      padding: 12px;
+      text-align: left;
+    }
+
+    .contact-info p, .hours p {
+      line-height: 1.6;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #1a1a1a;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #444;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+      }
+
+      th, td {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1><i class="fas fa-tools"></i> MR FIX IT Garage</h1>
+    <p>Your Reliable Auto Repair Partner</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#hours">Hours</a>
+    <a href="#contact">Contact</a>
+    <a href="#booking">Book</a>
+  </nav>
+
+  <!-- Hero Image -->
+  <img src="images/engine.jpg" alt="Garage Engine" class="hero" />
+
+  <main>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Welcome to MR FIX IT Garage. We offer top-quality car repairs, diagnostics, and full servicing by experienced mechanics. We keep your car in peak condition!</p>
+    </section>
+
+    <section id="services">
+      <h2>Our Services & Prices</h2>
+      <table>
+        <tr><th>Service</th><th>Price (MWK)</th></tr>
+        <tr><td>Oil Change</td><td>10,000</td></tr>
+        <tr><td>Brake Service</td><td>20,000</td></tr>
+        <tr><td>Engine Diagnostics</td><td>30,000</td></tr>
+        <tr><td>Full Car Service</td><td>40,000</td></tr>
+        <tr><td>suspension</td><td>25,000</td></tr>
+      </table>
+    </section>
+
+    <section id="hours" class="hours">
+      <h2>Opening Hours</h2>
+      <p>Mon – Fri: 8:00 AM – 6:00 PM<br>Saturday: 8:00 AM – 2:00 PM<br>Sunday: Closed</p>
+    </section>
+
+    <section id="contact" class="contact-info">
+      <h2>Contact Us</h2>
+      <p><i class="fas fa-phone"></i> +265 997 040 066<br>
+         <i class="fas fa-envelope"></i> mrfixitmalawi@gmail.com<br>
+         <i class="fas fa-map-marker-alt"></i> Lilongwe, Malawi</p>
+    </section>
+
+    <section id="booking">
+      <h2>Book a Service</h2>
+      <form>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" required>
+
+        <label for="service">Requested Service:</label>
+        <textarea id="service" name="service" rows="4" placeholder="Describe the issue or service you want..."></textarea>
+
+        <button type="submit">Submit Request</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 MR FIX IT Garage. All rights reserved.
+  </footer>
+
+</body>
+</html>
